@@ -10,6 +10,7 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 import org.apache.commons.lang.StringUtils;
+import org.springframework.transaction.interceptor.AbstractFallbackTransactionAttributeSource;
 
 /**
  * FileName: FuncTest.java Author: machao Date: 2019/06/05 09:56 Description:
@@ -72,6 +73,16 @@ public class FuncTest {
 			return weekNumbe;
 	    }
 	public static void main(String[] args) throws Exception {
+		//AbstractFallbackTransactionAttributeSource a;
+		float a = 0.125f; double b = 0.125d; System.out.println((a - b) == 0.0); 
+		double c = 0.8; double d = 0.7; double e = 0.6; System.out.println((c - d) == (d - e));
+		System.out.println(1.0 / 0);
+		System.out.println(0.0 / 0.0);
+		String t1 = "";
+		String t2 = "";
+		String t3 = "";
+		//t1.compareTo(anotherString);
+		
 		List<String> groups = new ArrayList<>();
 		//,101168,101170,101171,101174,101175,101176,101177,101167,101179,,101172
 		groups.add("");
